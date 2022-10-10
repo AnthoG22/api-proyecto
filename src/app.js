@@ -1,12 +1,31 @@
 import express from "express";
 import morgan from "morgan";
+import { http } from "follow-redirects";
 
 import productRoutes from "./routes/index.routes";
 
 const app = express();
 
-/* Setting the port to 4000. */
-app.set("port",process.env.PORT || 4000);
+const cors = require('cors');
+
+/* Setting the port to 3000. */
+app.set("port",process.env.PORT || 3000);
+
+/*CORS*/
+const whitelist = ['http://127.0.0.1:5500', 'http://127.0.0.1:5501']
+
+var corsOptions = {
+    origin : function (origin, callback){
+        if (whitelist.includes(origin)|| !origin) {
+            callback(null,true)
+        } else {
+            callback(new Error('No permitido por tema de CORS'))
+        }
+    }
+    
+
+}
+app.use(cors(corsOptions));
 
 /* Middlewares */
 app.use(morgan("dev"));
