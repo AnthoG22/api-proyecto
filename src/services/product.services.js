@@ -33,7 +33,7 @@ async function updateBook(id, title, total_pages, author, nationality , language
 
 async function deleteBook(body,response) {
     const connection = await getConnection();
-    const result = await connection.query("DELETE FROM products WHERE sku = ?", body.sku)
+    const result = await connection.query("DELETE FROM books WHERE id = ?", body.id)
     return response.json(result)
 }
 
