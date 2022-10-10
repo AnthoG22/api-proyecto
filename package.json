@@ -1,0 +1,38 @@
+{
+  "name": "api-proyecto",
+  "version": "1.0.0",
+  "description": "Project - API RESTful using Express and connected to a data base",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node --presets=@babel/preset-env",
+    "dev": "nodemon --exec npm run start src/index.js"
+  },
+  "keywords": [
+    "API",
+    "RESTful",
+    "Express",
+    "Services",
+    "Controllers",
+    "Commons",
+    "Routers"
+  ],
+  "author": "ANTHOG22",
+  "license": "ISC",
+  "homepage": "https://github.com/AnthoG22/api-proyecto#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "promise-mysql": "^5.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.3",
+    "@babel/node": "^7.19.1",
+    "@babel/preset-env": "^7.19.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20"
+  },
+  "engines" :{
+    "node":"16.x"
+  }
+}
