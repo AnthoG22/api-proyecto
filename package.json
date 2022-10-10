@@ -20,18 +20,19 @@
   "license": "ISC",
   "homepage": "https://github.com/AnthoG22/api-proyecto#readme",
   "dependencies": {
+    "babel-cli": "^6.26.0",
     "babel-loader": "^8.2.5",
     "cors": "^2.8.5",
     "express": "^4.18.1",
     "follow-redirects": "^1.15.2",
-    "promise-mysql": "^5.2.0"
+    "promise-mysql": "^5.2.0",
+    "source-map-url": "^0.4.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.19.3",
     "@babel/core": "^7.19.3",
     "@babel/node": "^7.19.1",
     "@babel/preset-env": "^7.19.3",
-    "babel-cli": "^6.26.0",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.20"
   },
