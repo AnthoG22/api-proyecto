@@ -8,8 +8,10 @@ const app = express();
 
 const cors = require('cors');
 
+let port = process.env.PORT || 3000
+
 /* Setting the port to 3000. */
-app.set("port",process.env.PORT || 3000);
+app.set("port",port);
 
 /*CORS*/
 const whitelist = ['http://127.0.0.1:5500', 'http://127.0.0.1:5501']

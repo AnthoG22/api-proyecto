@@ -20,6 +20,7 @@
   "license": "ISC",
   "homepage": "https://github.com/AnthoG22/api-proyecto#readme",
   "dependencies": {
+    "babel-loader": "^8.2.5",
     "cors": "^2.8.5",
     "express": "^4.18.1",
     "follow-redirects": "^1.15.2",
