@@ -8,13 +8,15 @@ const app = express();
 
 const cors = require('cors');
 
-let port = process.env.PORT || 3000
+//let port = process.env.PORT || 4000 ;
 
-/* Setting the port to 3000. */
+let port =  4000 ;
+
+/* Setting the port to 4000. */
 app.set("port",port);
 
 /*CORS*/
-const whitelist = ['http://127.0.0.1:5500', 'http://127.0.0.1:5501']
+const whitelist = ['http://127.0.0.1:5500', 'http://127.0.0.1:5501','http://127.0.0.1:5000','http://127.0.0.1:5001']
 
 var corsOptions = {
     origin : function (origin, callback){
